@@ -9,7 +9,7 @@ const RemoveFromCart = ({ productId }) => {
   const handleClick = () => {
     dispatch({ type: 'REMOVE_FROM_CART', payload: productId });
   };
-
+//Rendere a remove button to take out items on click
   return (
   <div className="container">
   <div className="row">

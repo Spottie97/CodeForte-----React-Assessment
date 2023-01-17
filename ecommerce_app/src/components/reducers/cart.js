@@ -1,7 +1,7 @@
 const initialState = {
     items: []
   };
-  
+  //This function is used to make use of redux package to manage states.
   const cartReducer = (state = initialState, action) => {
     switch (action.type) {
       case 'ADD_TO_CART':
