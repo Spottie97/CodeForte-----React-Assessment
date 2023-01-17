@@ -9,14 +9,14 @@ const Checkout = () => {
 
   return (
     <div className='container'>
-      <h1>Checkout</h1>
+      <h1 className='text-center text-dark p-4'>Checkout</h1>
       <table className="table">
         <thead>
           <tr>
-            <th>Product Name</th>
-            <th>Price</th>
-            <th>Quantity</th>
-            <th>Total</th>
+            <th className='text-dark'>Product Name</th>
+            <th className='text-dark'>Price</th>
+            <th className='text-dark'>Quantity</th>
+            <th className='text-dark'>Total</th>
           </tr>
         </thead>
         <tbody>
