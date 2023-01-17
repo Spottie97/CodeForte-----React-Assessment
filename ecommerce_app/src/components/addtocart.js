@@ -5,7 +5,8 @@ import RemoveFromCart from './removefromcart';
 const AddToCart = ({ product }) => {
     //Making use of the useDispatch hook to get acess to the dispatch function
   const dispatch = useDispatch();
-
+  //Checking if product is not undefined 
+  if(!product) return null;
   //Making use of handleClick function 
   const handleClick = () => {
     //I now dispatch an action with the type of "ADD_TO_CART" and the payload of the product
@@ -22,3 +23,4 @@ const AddToCart = ({ product }) => {
 };
 
 export default AddToCart;
+
