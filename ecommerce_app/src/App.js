@@ -16,6 +16,7 @@ function App() {
       <div className="App">
         <Header/>
         <ProductList />
+        <Checkout/>
       </div>
     </Provider>
   );
