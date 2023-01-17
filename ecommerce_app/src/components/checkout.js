@@ -1,3 +1,5 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import React from 'react';
 import { useSelector } from 'react-redux';
 
@@ -6,9 +8,9 @@ const Checkout = () => {
   const cartItems = useSelector((state) => state.cart.items);
 
   return (
-    <div>
+    <div className='container'>
       <h1>Checkout</h1>
-      <table>
+      <table className="table">
         <thead>
           <tr>
             <th>Product Name</th>
@@ -29,7 +31,7 @@ const Checkout = () => {
         </tbody>
       </table>
       <h2>Total: {cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0)}</h2>
-      <button>Place Order</button>
+      <button className="btn btn-primary">Place Order</button>
     </div>
   );
 };

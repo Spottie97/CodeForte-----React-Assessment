@@ -1,3 +1,5 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import RemoveFromCart from './removefromcart';
@@ -15,8 +17,8 @@ const AddToCart = ({ product }) => {
 
   // Create/Render a button that will call the handleClick function on click
   return (
-  <div>
-      <button onClick={handleClick}>Add to Cart</button>;
+    <div className="container">
+      <button className="btn btn-primary" onClick={handleClick}>Add to Cart</button>
       <RemoveFromCart productId={product.id}/>
     </div>
     );
