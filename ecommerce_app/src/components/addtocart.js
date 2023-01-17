@@ -1,5 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
+import RemoveFromCart from './removefromcart';
 
 const AddToCart = ({ product }) => {
     //Making use of the useDispatch hook to get acess to the dispatch function
@@ -12,7 +13,12 @@ const AddToCart = ({ product }) => {
   };
 
   // Create/Render a button that will call the handleClick function on click
-  return <button onClick={handleClick}>Add to Cart</button>;
+  return (
+  <div>
+      <button onClick={handleClick}>Add to Cart</button>;
+      <RemoveFromCart productId={product.id}/>
+    </div>
+    );
 };
 
 export default AddToCart;

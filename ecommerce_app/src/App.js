@@ -1,12 +1,10 @@
-//import './App.css';
 import { Provider } from 'react-redux';
-import { configureStore } from 'redux';
-import cartReducer from './reducers/cart';
-//import "bootstrap/dist/css/bootstrap.min.css";
+import { createStore } from 'redux';
+import cartReducer from './components/reducers/cart';
 import ProductList from './components/productlist';
 import Header from './components/header';
 
-const store = configureStore(cartReducer);
+const store = createStore(cartReducer);
 
 function App() {
   return (
