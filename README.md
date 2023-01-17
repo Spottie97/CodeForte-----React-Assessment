@@ -24,7 +24,7 @@
 ## Design Layout
 
 ## Coding Process
-    See commits for my process
+ - See commits for my process
 
 ## Resouces used
  - StackOverFlow: https://stackoverflow.com/
