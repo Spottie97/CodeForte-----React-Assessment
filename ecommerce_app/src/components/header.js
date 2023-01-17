@@ -10,10 +10,15 @@ const Header = () => {
   const itemCount = cartItems.length;
   return (
     <div>
-      <img src={'../images/cart-icon.svg'} alt={'Cart'} />
-      <span>{itemCount}</span>
-      <AddToCart/>
-      <RemoveFromCart/>
+      <header className='bg-dark text-white p-4'>
+        <h1 className='text-center'>Ecommerce App</h1>
+        <nav className='navbar navbar-expand-lg navbar-light bg-light'>
+          <img src={'../images/cart-icon.svg'} className='text-dark' alt={'Cart'} />
+          <span className='text-dark'>{itemCount}</span>
+          <AddToCart/>
+          <RemoveFromCart/>
+        </nav>
+      </header>
     </div>
   );
 };
