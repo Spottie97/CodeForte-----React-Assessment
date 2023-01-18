@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 
 const Checkout = () => {
   // Use the useSelector hook to get the items from the cart state
-  const cartItems = useSelector((state) => state.cart.items);
+  const cartItems = useSelector((state) => state.items) || [];
 
   return (
     <div className='container'>
