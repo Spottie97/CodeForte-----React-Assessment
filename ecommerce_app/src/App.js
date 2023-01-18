@@ -3,7 +3,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import React from 'react';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-import cartReducer from "./components/reducers/cart";
+import cartReducer from './reducers/cart';
 import Header from './components/header';
 import ProductList from './components/productlist';
 import Checkout from './components/checkout';
@@ -15,7 +15,7 @@ function App() {
     <Provider store={store}>
       <div className="App">
         <Header/>
-        <ProductList />
+        <ProductList/>
         <Checkout/>
       </div>
     </Provider>

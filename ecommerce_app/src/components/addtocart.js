@@ -17,9 +17,11 @@ const AddToCart = ({ product }) => {
 
   // Create/Render a button that will call the handleClick function on click
   return (
-    <div className="container">
+    <div className='container'>
+      <div classNam="row">
       <button className="btn btn-primary" onClick={handleClick}>Add to Cart</button>
       <RemoveFromCart productId={product.id}/>
+      </div>
     </div>
     );
 };

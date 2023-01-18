@@ -15,8 +15,10 @@ const Header = () => {
         <nav className='navbar navbar-expand-lg navbar-light bg-light'>
           <img src={'../images/cart-icon.svg'} className='text-dark' alt={'Cart'} />
           <span className='text-dark'>{itemCount}</span>
-          <AddToCart/>
-          <RemoveFromCart/>
+          <div>
+            <AddToCart/>
+            <RemoveFromCart/>
+          </div>
         </nav>
       </header>
     </div>
